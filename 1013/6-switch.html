@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // switch(){
+        //     case'';
+        // }
+
+        const lang = 'kr';
+        let msg = null;
+
+        switch(lang){
+            case'jp':
+            msg = '日本';
+            break; //破壞switch ,中止這個switch後續工作
+            case'kr':
+            msg = '韓國';           
+            break;
+
+            case'en':
+            msg = '英國';
+            break;
+
+            case'hk':
+            msg = '香港';
+            break;
+
+            case'tw':
+            msg = '台灣';
+            break;
+
+            default:
+                msg = '找不到您要的國家';
+                break;
+        }
+
+        //會員編號
+        const memberState = 'new'; //old
+
+        switch(memberState){
+            case'new':
+            console.log("新會員");
+
+            case'old':
+            console.log("舊會員");
+            break;
+        }
+
+        // console.log(msg);
+
+        // console.clear();
+
+     
+
+    </script>
+</body>
+</html>
