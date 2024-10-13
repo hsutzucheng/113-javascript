@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function自訂函式</title>
+</head>
+<body>
+    <script>
+
+        //function 就像公司產生報表
+        //自訂 functon 函式,名字為 hello 他沒有傳遞參數(可指定預設值),他的工作是印出 hello world
+        function hello(name = 'to You'){
+            // console.log(`helle world,${name}!!`);
+
+            // if (name === undefined){
+            //     console.log(`helle world`);
+            // }else{
+            //       console.log(`helle world,${name}!!`);
+            // }            
+            // console.log(`helle world,${name}!!`);
+        }
+
+        hello('Loki'); //名為hello函式,透過()符號進行執行
+        hello('Joker'); 
+        hello('van'); 
+        hello();
+
+        console.clear();
+
+        //宣告一個變數.這個變數為 fn 的變數
+
+        varHello1 = function(name){// 匿名函式，沒有名字的fn
+            console.log(`helle ${name}!!`);
+        };
+
+        varHello2 = function sayHello(name){//帶名字的fn
+            console.log(`hello ${name}!!`);
+        };
+
+        (function sayHello(){
+            console.log(`hello world`);
+        })(); //左邊()匿名函式宣,右邊()直接執行
+
+        console.clear(); 
+
+        say1 = function(name){
+            str = 'hello' + name;
+            return str;
+            console.log('done');
+        }
+
+      ans = say1('Loki');
+      console.log(ans);
+
+      ////
+      //10:30
+      say2 = function(name){
+        return 'hello' +name;
+      }
+      console.log(say2('Loki'));
+
+      say3 = function (name){
+        console.log('-------------');
+        return'hello' + name;
+      }
+      console.log(say3('Loki'));
+
+    </script>
+    
+</body>
+</html>
